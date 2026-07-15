@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="container">
+        <h2 class="title" >Body Mass Index (BMI) Calculator</h2>
+        <div class="input-data">
+            <label for="height">Your height (in cm) :</label>
+            <input type="number" id="height" class="height" value="180" placeholder="Enter Your Height in cm">
+            <label for="weight">Your weight (in kg) :</label>
+            <input type="number" id="weight" class="weight" value="50" placeholder="Enter Your Weight in KG">
+            <div class="btn-container">
+            <button class="submit">Compute BMI</button>
+            </div>
+            <label for="result">Your BMI :</label>
+            <input id="result" class="result" disabled>
+            <div class="condition">
+            <!-- <label for="wt-condition">Weight Condition :</label> -->
+            <!-- <input id="wt-condition" class="wt-condition"> -->
+             <h4 class="wt-condition" >Weight Condition :
+                <span id="wt-condition"></span>
+             </h4>
+            </div>
+        </div>
+        
+
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
